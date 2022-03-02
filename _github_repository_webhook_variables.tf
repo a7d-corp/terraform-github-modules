@@ -34,5 +34,5 @@ variable "active" {
 
 variable "events" {
   type        = list(string)
-  description = "A list of events which should trigger the webhook"
+  description = "A list of events which should trigger the webhook."
 }
