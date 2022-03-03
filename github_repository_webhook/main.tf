@@ -1,6 +1,4 @@
 resource "github_repository_webhook" "webhook" {
-  count = var.webhook_enabled ? 1 : 0
-
   repository = var.repo_name
 
   configuration {
