@@ -4,6 +4,11 @@ variable "webhook_enabled" {
   description = "Toggles webhook creation on or off."
 }
 
+variable "repo_name" {
+  type        = string
+  description = "The name of the repository."
+}
+
 variable "url" {
   type        = string
   description = "The URL of the webhook."
