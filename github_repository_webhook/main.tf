@@ -12,5 +12,5 @@ resource "github_repository_webhook" "webhook" {
 
   active = var.active
 
-  events = [var.events]
+  events = var.events
 }
