@@ -14,17 +14,17 @@ Terraform module to configure a Github repository.
 |------|---------|
 | <a name="provider_github"></a> [github](#provider_github) | ~> 4.0 |
 
-## Modules
-
-No modules.
-
 ## Resources
 
 | Name | Type |
 |------|------|
 | [github_repository.repo](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository) | resource |
 
-## Repository resource inputs
+## Modules
+
+### github_repository
+
+`terraform-github-modules/github_repository/`
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
@@ -43,7 +43,9 @@ No modules.
 | <a name="input_repo_name"></a> [repo_name](#input_repo_name) | The name of the repository. | `string` | n/a | yes |
 | <a name="input_repo_visibility"></a> [repo_visibility](#input_repo_visibility) | Repository visibility; either 'public' or 'private'. | `string` | n/a | yes |
 
-## Webhook resource inputs
+### github_repository_webhook
+
+`terraform-github-modules/github_repository_webhook/`
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
