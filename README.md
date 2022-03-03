@@ -53,9 +53,9 @@ Terraform module to configure a Github repository.
 | <a name="input_content_type"></a> [content_type](#input_content_type) | The content type for the payload. | `string` | n/a | yes |
 | <a name="input_events"></a> [events](#input_events) | A list of events which should trigger the webhook. | `list(string)` | n/a | yes |
 | <a name="input_insecure_ssl"></a> [insecure_ssl](#input_insecure_ssl) | Insecure SSL boolean toggle. | `bool` | `false` | no |
+| <a name="input_repo_name"></a> [repo_name](#input_repo_name) | The name of the repository. | `string` | n/a | yes |
 | <a name="input_secret"></a> [secret](#input_secret) | The shared secret for the webhook. | `string` | n/a | yes |
 | <a name="input_url"></a> [url](#input_url) | The URL of the webhook. | `string` | n/a | yes |
-| <a name="input_webhook_enabled"></a> [webhook_enabled](#input_webhook_enabled) | Toggles webhook creation on or off. | `number` | `0` | no |
 
 ## Outputs
 
