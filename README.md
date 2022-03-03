@@ -58,3 +58,12 @@ No modules.
 ## Outputs
 
 No outputs.
+
+## Adding a new module
+
+- Create the directory and populate it with Terraform manifests.
+- Symlink `_versions.tf` from the root directory into the module directory.
+- Generate an inputs reference for the new module with the command below and add it to the README:
+```
+terraform-docs markdown table <module_dir> --escape=false
+```
