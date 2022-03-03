@@ -61,6 +61,16 @@ Terraform module to configure a Github repository.
 
 No outputs.
 
+## Using the modules
+
+Set the module `source` in your module configuration:
+
+```
+source = "github.com/glitchcrab/terraform-github-modules//github_repository"
+```
+
+Note: the `//` is important as it tells Terraform that it's a child directory of the main module repo.
+
 ## Adding a new module
 
 - Create the directory and populate it with Terraform manifests.
