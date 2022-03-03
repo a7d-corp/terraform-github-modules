@@ -1,4 +1,4 @@
-# terraform-module-github-repo
+# terraform-github-modules
 
 Terraform module to configure a Github repository.
 
