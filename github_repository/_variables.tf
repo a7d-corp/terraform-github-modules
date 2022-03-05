@@ -32,6 +32,13 @@ variable "has_wiki" {
   default     = false
   description = "Enable the GitHub wiki feature for this repository."
 }
+
+variable "has_downloads" {
+  type        = bool
+  default     = false
+  description = "Set to true to enable the (deprecated) downloads features on the repository."
+}
+
 variable "is_template" {
   type        = bool
   default     = false
