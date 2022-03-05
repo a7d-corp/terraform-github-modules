@@ -10,6 +10,13 @@ variable "repo_visibility" {
   type        = string
   description = "Repository visibility; either 'public' or 'private'."
 }
+
+variable "topics" {
+  type        = list(any)
+  default     = null
+  description = "The list of topics of the repository."
+}
+
 variable "has_issues" {
   type        = bool
   default     = false
@@ -25,6 +32,13 @@ variable "has_wiki" {
   default     = false
   description = "Enable the GitHub wiki feature for this repository."
 }
+
+variable "has_downloads" {
+  type        = bool
+  default     = false
+  description = "Set to true to enable the (deprecated) downloads features on the repository."
+}
+
 variable "is_template" {
   type        = bool
   default     = false
@@ -55,6 +69,13 @@ variable "delete_branch_on_merge" {
   default     = false
   description = "Delete branch on pull request merge."
 }
+
+variable "vulnerability_alerts" {
+  type        = bool
+  default     = false
+  description = "Enable security alerts for vulnerable dependencies."
+}
+
 variable "gitignore_template" {
   type        = string
   default     = null
