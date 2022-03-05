@@ -69,6 +69,13 @@ variable "delete_branch_on_merge" {
   default     = false
   description = "Delete branch on pull request merge."
 }
+
+variable "vulnerability_alerts" {
+  type        = bool
+  default     = false
+  description = "Enable security alerts for vulnerable dependencies."
+}
+
 variable "gitignore_template" {
   type        = string
   default     = null

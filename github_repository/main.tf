@@ -18,6 +18,8 @@ resource "github_repository" "repo" {
   allow_auto_merge       = var.allow_auto_merge
   delete_branch_on_merge = var.delete_branch_on_merge
 
+  vulnerability_alerts = var.vulnerability_alerts
+
   # misc repo templating
   gitignore_template = var.gitignore_template
   license_template   = var.license_template
