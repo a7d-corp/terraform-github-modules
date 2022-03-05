@@ -10,6 +10,13 @@ variable "repo_visibility" {
   type        = string
   description = "Repository visibility; either 'public' or 'private'."
 }
+
+variable "topics" {
+  type        = list(any)
+  default     = null
+  description = "The list of topics of the repository."
+}
+
 variable "has_issues" {
   type        = bool
   default     = false
