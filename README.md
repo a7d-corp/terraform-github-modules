@@ -43,6 +43,16 @@ Terraform module to configure a Github repository.
 | <a name="input_repo_name"></a> [repo_name](#input_repo_name) | The name of the repository. | `string` | n/a | yes |
 | <a name="input_repo_visibility"></a> [repo_visibility](#input_repo_visibility) | Repository visibility; either 'public' or 'private'. | `string` | n/a | yes |
 
+### github_repository_collaborator
+
+`terraform-github-modules/github_repository_collaborator/`
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_collaborator_name"></a> [collaborator_name](#input_collaborator_name) | The user to add to the repository as a collaborator. | `string` | n/a | yes |
+| <a name="input_collaborator_permission"></a> [collaborator_permission](#input_collaborator_permission) | The permission of the outside collaborator for the repository. | `string` | `"push"` | no |
+| <a name="input_repo_name"></a> [repo_name](#input_repo_name) | The GitHub repository name. | `string` | n/a | yes |
+
 ### github_repository_webhook
 
 `terraform-github-modules/github_repository_webhook/`
