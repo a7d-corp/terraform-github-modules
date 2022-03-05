@@ -10,5 +10,6 @@ variable "collaborator_name" {
 
 variable "collaborator_permission" {
   type        = string
+  default     = "push"
   description = "The permission of the outside collaborator for the repository."
 }
