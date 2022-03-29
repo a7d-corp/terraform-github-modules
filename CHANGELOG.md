@@ -7,4 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add release workflows.
+
 [Unreleased]: https://github.com/a7d-corp/terraform-github-modules/tree/main
