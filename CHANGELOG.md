@@ -10,5 +10,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add release workflows.
+- Expose parent template repo configuration.
 
 [Unreleased]: https://github.com/a7d-corp/terraform-github-modules/tree/main
