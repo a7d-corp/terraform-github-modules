@@ -44,6 +44,19 @@ variable "is_template" {
   default     = false
   description = "Set this repository as a template."
 }
+
+variable "template_repo_name" {
+  type        = string
+  default     = null
+  description = "The GitHub organization or user the template repository is owned by."
+}
+
+variable "template_repo_name" {
+  type        = string
+  default     = null
+  description = "The name of the template repository."
+}
+
 variable "allow_merge_commit" {
   type        = bool
   default     = true
