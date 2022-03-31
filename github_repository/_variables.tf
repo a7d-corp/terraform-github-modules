@@ -45,6 +45,12 @@ variable "is_template" {
   description = "Set this repository as a template."
 }
 
+variable "from_template" {
+  type        = bool
+  default     = false
+  description = "Was this repo generated from a template repo?"
+}
+
 variable "template_repo_owner" {
   type        = string
   default     = null
