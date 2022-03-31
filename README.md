@@ -44,6 +44,7 @@ Terraform module to configure a Github repository.
 | <a name="input_repo_name"></a> [repo_name](#input_repo_name) | The name of the repository. | `string` | n/a | yes |
 | <a name="input_repo_visibility"></a> [repo_visibility](#input_repo_visibility) | Repository visibility; either 'public' or 'private'. | `string` | n/a | yes |
 | <a name="input_template_repo_name"></a> [template_repo_name](#input_template_repo_name) | The name of the template repository. | `string` | `null` | no |
+| <a name="input_template_repo_owner"></a> [template_repo_owner](#input_template_repo_owner) | The GitHub organization or user the template repository is owned by. | `string` | `null` | no |
 | <a name="input_topics"></a> [topics](#input_topics) | The list of topics of the repository. | `list(any)` | `null` | no |
 | <a name="input_vulnerability_alerts"></a> [vulnerability_alerts](#input_vulnerability_alerts) | Enable security alerts for vulnerable dependencies. | `bool` | `false` | no |
 
