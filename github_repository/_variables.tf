@@ -45,7 +45,7 @@ variable "is_template" {
   description = "Set this repository as a template."
 }
 
-variable "template_repo_name" {
+variable "template_repo_owner" {
   type        = string
   default     = null
   description = "The GitHub organization or user the template repository is owned by."
