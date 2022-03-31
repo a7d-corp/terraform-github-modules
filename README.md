@@ -33,6 +33,7 @@ Terraform module to configure a Github repository.
 | <a name="input_allow_rebase_merge"></a> [allow_rebase_merge](#input_allow_rebase_merge) | Allow rebase merge commits. | `bool` | `true` | no |
 | <a name="input_allow_squash_merge"></a> [allow_squash_merge](#input_allow_squash_merge) | Allow squash merge commits. | `bool` | `true` | no |
 | <a name="input_delete_branch_on_merge"></a> [delete_branch_on_merge](#input_delete_branch_on_merge) | Delete branch on pull request merge. | `bool` | `false` | no |
+| <a name="input_from_template"></a> [from_template](#input_from_template) | Was this repo generated from a template repo? | `bool` | `false` | no |
 | <a name="input_gitignore_template"></a> [gitignore_template](#input_gitignore_template) | Template for the gitignore file. | `string` | `null` | no |
 | <a name="input_has_downloads"></a> [has_downloads](#input_has_downloads) | Set to true to enable the (deprecated) downloads features on the repository. | `bool` | `false` | no |
 | <a name="input_has_issues"></a> [has_issues](#input_has_issues) | Enable the GitHub issues feature for this repository. | `bool` | `false` | no |

@@ -12,9 +12,12 @@ resource "github_repository" "repo" {
   is_template = var.is_template
 
   # parent template repo
-  template {
-    owner      = var.template_repo_owner
-    repository = var.template_repo_name
+  dynamic "template" {
+    for_each = var.from_template ? [] : [1]
+    content {
+      owner      = var.template_repo_owner
+      repository = var.template_repo_name
+    }
   }
 
   # merge-related options
