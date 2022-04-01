@@ -13,7 +13,7 @@ resource "github_repository" "repo" {
 
   # parent template repo
   dynamic "template" {
-    for_each = var.from_template ? [] : [1]
+    for_each = var.from_template ? [1] : []
     content {
       owner      = var.template_repo_owner
       repository = var.template_repo_name
