@@ -32,6 +32,7 @@ Terraform module to configure a Github repository.
 | <a name="input_allow_merge_commit"></a> [allow_merge_commit](#input_allow_merge_commit) | Allow merge commits. | `bool` | `true` | no |
 | <a name="input_allow_rebase_merge"></a> [allow_rebase_merge](#input_allow_rebase_merge) | Allow rebase merge commits. | `bool` | `true` | no |
 | <a name="input_allow_squash_merge"></a> [allow_squash_merge](#input_allow_squash_merge) | Allow squash merge commits. | `bool` | `true` | no |
+| <a name="input_auto_init"></a> [auto_init](#input_auto_init) | Create an initial commit in a new repository. | `bool` | `true` | no |
 | <a name="input_delete_branch_on_merge"></a> [delete_branch_on_merge](#input_delete_branch_on_merge) | Delete branch on pull request merge. | `bool` | `false` | no |
 | <a name="input_from_template"></a> [from_template](#input_from_template) | Was this repo generated from a template repo? | `bool` | `false` | no |
 | <a name="input_gitignore_template"></a> [gitignore_template](#input_gitignore_template) | Template for the gitignore file. | `string` | `null` | no |

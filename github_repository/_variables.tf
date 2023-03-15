@@ -39,6 +39,12 @@ variable "has_downloads" {
   description = "Set to true to enable the (deprecated) downloads features on the repository."
 }
 
+variable "auto_init" {
+  type        = bool
+  default     = true
+  description = "Create an initial commit in a new repository."
+}
+
 variable "is_template" {
   type        = bool
   default     = false
