@@ -39,13 +39,25 @@ variable "has_downloads" {
   description = "Set to true to enable the (deprecated) downloads features on the repository."
 }
 
+variable "auto_init" {
+  type        = bool
+  default     = true
+  description = "Create an initial commit in a new repository."
+}
+
 variable "is_template" {
   type        = bool
   default     = false
   description = "Set this repository as a template."
 }
 
-variable "template_repo_name" {
+variable "from_template" {
+  type        = bool
+  default     = false
+  description = "Was this repo generated from a template repo?"
+}
+
+variable "template_repo_owner" {
   type        = string
   default     = null
   description = "The GitHub organization or user the template repository is owned by."

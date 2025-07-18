@@ -32,7 +32,9 @@ Terraform module to configure a Github repository.
 | <a name="input_allow_merge_commit"></a> [allow_merge_commit](#input_allow_merge_commit) | Allow merge commits. | `bool` | `true` | no |
 | <a name="input_allow_rebase_merge"></a> [allow_rebase_merge](#input_allow_rebase_merge) | Allow rebase merge commits. | `bool` | `true` | no |
 | <a name="input_allow_squash_merge"></a> [allow_squash_merge](#input_allow_squash_merge) | Allow squash merge commits. | `bool` | `true` | no |
+| <a name="input_auto_init"></a> [auto_init](#input_auto_init) | Create an initial commit in a new repository. | `bool` | `true` | no |
 | <a name="input_delete_branch_on_merge"></a> [delete_branch_on_merge](#input_delete_branch_on_merge) | Delete branch on pull request merge. | `bool` | `false` | no |
+| <a name="input_from_template"></a> [from_template](#input_from_template) | Was this repo generated from a template repo? | `bool` | `false` | no |
 | <a name="input_gitignore_template"></a> [gitignore_template](#input_gitignore_template) | Template for the gitignore file. | `string` | `null` | no |
 | <a name="input_has_downloads"></a> [has_downloads](#input_has_downloads) | Set to true to enable the (deprecated) downloads features on the repository. | `bool` | `false` | no |
 | <a name="input_has_issues"></a> [has_issues](#input_has_issues) | Enable the GitHub issues feature for this repository. | `bool` | `false` | no |
@@ -44,6 +46,7 @@ Terraform module to configure a Github repository.
 | <a name="input_repo_name"></a> [repo_name](#input_repo_name) | The name of the repository. | `string` | n/a | yes |
 | <a name="input_repo_visibility"></a> [repo_visibility](#input_repo_visibility) | Repository visibility; either 'public' or 'private'. | `string` | n/a | yes |
 | <a name="input_template_repo_name"></a> [template_repo_name](#input_template_repo_name) | The name of the template repository. | `string` | `null` | no |
+| <a name="input_template_repo_owner"></a> [template_repo_owner](#input_template_repo_owner) | The GitHub organization or user the template repository is owned by. | `string` | `null` | no |
 | <a name="input_topics"></a> [topics](#input_topics) | The list of topics of the repository. | `list(any)` | `null` | no |
 | <a name="input_vulnerability_alerts"></a> [vulnerability_alerts](#input_vulnerability_alerts) | Enable security alerts for vulnerable dependencies. | `bool` | `false` | no |
 
